@@ -1,4 +1,6 @@
+// Make a project in which the random sized circle generated where the cursor click on body but the limit of circle made will ont be more than 2 and also check if the circles are intersecting each other or not//
 
+let circleCoOrdinate = [];
 
 document.addEventListener('click', (e) => {
     let x = e.clientX;
@@ -14,6 +16,9 @@ document.addEventListener('click', (e) => {
     Circle.style.left = x-(circleRadius/2) + "px";
 
     document.body.append(Circle);
+
+    circleCoOrdinate.push(x,y);
+    console.log(circleCoOrdinate);
 
 
     // Condition
